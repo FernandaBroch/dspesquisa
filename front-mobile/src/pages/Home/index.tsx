@@ -2,13 +2,18 @@ import React from 'react';
 import { Text, StyleSheet, View , Image } from 'react-native';
 import {FontAwesome5 as Icon } from '@expo/vector-icons';
 import { RectButton } from 'react-native-gesture-handler';
+import Header from '../../components/Header';
+import { useNavigation } from '@react-navigation/native';
 const Home = () => {
 
-  const handleOnPress = () => {
+  const navigation = useNavigation();
 
+  const handleOnPress = () => {
+    navigation.navigate('CreateRecord');
   }
   return (
     <>
+    <Header></Header>
     <View style={styles.container}>
       <Image 
         source={require('../../assets/gamer.png')}
@@ -19,9 +24,13 @@ const Home = () => {
     </View>
     <View style={styles.footer}> 
       <RectButton style={styles.button} onPress={handleOnPress}>
-        <Text>COLETAR DADOS</Text>
-        <View>
-          <Text><Icon name="chevron-right" color="#FFF"></Icon></Text>
+        <Text style={styles.buttonText}>
+          COLETAR DADOS
+        </Text>
+        <View style={styles.buttonIcon}>
+          <Text>
+            <Icon name="chevron-right" color="#FFF" size={25}></Icon>
+          </Text>
         </View>
       </RectButton>
     </View>
