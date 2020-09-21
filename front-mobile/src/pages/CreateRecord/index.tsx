@@ -12,8 +12,8 @@ const placeholder = {
   label: 'Selecione o game',
   value: null
 }
-const BASE_URL = 'http://192.168.0.6:8080';
-// const BASE_URL = 'https://sds1-fernanda.herokuapp.com/games';
+// const BASE_URL = 'http://192.168.0.6:8080';
+const BASE_URL = 'https://sds1-fernanda.herokuapp.com';
 
 const mapSelectValues = (games: Game[]) => {
   return games.map(game => ({
@@ -54,7 +54,7 @@ const CreateRecord = () => {
   }
 
   useEffect(() => {
-    axios.get(`${BASE_URL}/game`).then(response => {
+    axios.get(`${BASE_URL}/games`).then(response => {
       const selectValues = mapSelectValues(response.data);
       setAllGames(selectValues);
     }).catch(()=> Alert.alert('Erro ao listar os jogos.'))
