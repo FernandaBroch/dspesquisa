@@ -1,5 +1,4 @@
 import React from 'react';
-import { isModifier } from 'typescript';
 import './styles.css';
 
 type Props = {
