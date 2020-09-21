@@ -13,6 +13,7 @@ const placeholder = {
   value: null
 }
 const BASE_URL = 'http://192.168.0.6:8080';
+// const BASE_URL = 'https://sds1-fernanda.herokuapp.com/games';
 
 const mapSelectValues = (games: Game[]) => {
   return games.map(game => ({
