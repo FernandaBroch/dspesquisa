@@ -1,47 +1,43 @@
-## This project was created in the following bootcamp:
-[Semana DevSuperior 1.0](https://devsuperior.com.br/sds1c)<br />
-[Github DevSuperior](https://github.com/devsuperior/sds1)
+## Whats is this project ?
+DS Pesquisa consists in a survey available only in a mobile app, made with Reactive Native + Expo, that collects whats is the user favorite game. 
+The games are split in 3 plataforms: PC, Playstation and XBOX. The results of this survey are available in a site made with React. <br/>
+The back end was made using Java + Spring Boot and the database is postgresql.
 
+---
 
 ## Available Scripts
 
-In the project directory, you can run:
+### In the folder front-web, you can run:
 
-### `npm start`
+`npm run start`
 
-Runs the app in the development mode.<br />
+Runs the app with the result of the survey.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+<br /><br />
 
-### `npm test`
+### In folder front-mobile, you can run:
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+`npm run start`
 
-### `npm run build`
+Since the mobile app survey was made with [Expo.io](https://expo.io/), to be able to preview the project, it is necessary to install the expo app in your smartphone. After this, open Expo Client on your device. Scan the QR code printed by expo start with Expo Client (Android) or Camera (iOS). You may have to wait a minute while your project bundles and loads for the first time.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Now you will be able to answer the survey in the mobile DS Pesquisa App.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+<br /><br />
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### In folder backend, you can run:
 
-### `npm run eject`
+`./mvnw spring-boot:run`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+This will start a Java + Spring boot application that provides the API to both frontend web and mobile aplication.
+<br /><br />     
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![mobile version](https://i.imgur.com/k0whuBC.png)
+<br /><br />
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+#### This project was created in the following bootcamp:
+[Semana DevSuperior 1.0](https://devsuperior.com.br/sds1c)<br />
+[Github DevSuperior](https://github.com/devsuperior/sds1)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
