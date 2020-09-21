@@ -2,9 +2,11 @@
 DS Pesquisa consists in a survey available only in a mobile app, made with Reactive Native + Expo, that collects whats is the user favorite game. 
 The games are split in 3 plataforms: PC, Playstation and XBOX. The results of this survey are available in a site made with React. <br/>
 The back end was made using Java + Spring Boot and the database is postgresql.
-Live project in Netifly
-[DS Pesquisa](https://sds1-fernanda.netlify.app/)
-[Java API on Heroku](https://sds1-fernanda.herokuapp.com/games)
+<br/>Live project:<br/>
+
+[Netlify - React Front-end](https://sds1-fernanda.netlify.app/)
+
+[Heroku - Java API](https://sds1-fernanda.herokuapp.com/games)
 
 ---
 
